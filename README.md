@@ -35,6 +35,24 @@ All the data then gets saved into an SQL Database to be accessed later.
 
 ![image](https://github.com/dilnazua/AstroTravel/assets/50591474/e5462a99-9149-473c-affc-09c3a2488feb)
 
+The vertical trajectory of a rocket is described by height, speed, total mass, functions of time h(t), V(t), m(t).
+These values can be taken by using Newton’s 2nd law and mass conversion h=V; V=F/m |  m=-mfuel
+The resulting force F affecting the rocket consists of 3 elements: gravitational force, aerodynamic drag force, and thrust.
+F = - mg-D+T,  if V>0  |  F=-mg+D-T,  if V<0
+Drag can be represented as:
+D=1/2pV^2CdA
+Thrust and propellant mass flow rates can be connected by exhaust velocity:
+T=mfuel*Ue
+Based on the calculations above PyQt program was built
+Input Data:
+![image](https://github.com/dilnazua/AstroTravel/assets/50591474/c0f260d8-a6ed-4e51-b06e-35e701d60816)
+
+Site coordinates(longitude, latitude), elevation(optional), inclination of the rocket, date, motor type, rocket type
+Using date and site coordinates, environmental information was taken from GFS(Global Forecast System).
+RocketPy library was also used to calculate trajectories.
+Output Data: Graphs of environmental information(wind direction and speed, air density, the graph of thrust and time relation, flight trajectory, graphs of kinematics data, altitude data, energy data.
+
+
 
 ![image](https://github.com/dilnazua/AstroTravel/assets/50591474/8b244ead-8181-4bb3-9076-c0a1b3a44581)
 
