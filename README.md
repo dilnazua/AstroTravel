@@ -14,7 +14,7 @@ A Unity & Vuforia-based AR app modeling the Solar System to predict planetary po
 ![image](https://github.com/dilnazua/AstroTravel/assets/50591474/1d411798-5589-433b-b80b-fd72ab26250c)
 
 
-![image](https://github.com/dilnazua/AstroTravel/assets/50591474/2003560e-b033-4798-b4d5-dd19432d44e7
+![image](https://github.com/dilnazua/AstroTravel/assets/50591474/2003560e-b033-4798-b4d5-dd19432d44e7)
 
 
 ![image](https://github.com/dilnazua/AstroTravel/assets/50591474/e5462a99-9149-473c-affc-09c3a2488feb)
