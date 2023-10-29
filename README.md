@@ -18,6 +18,17 @@ Rocket’s flight trajectory prediction program was made on the PyQt platform us
 
 ![image](https://github.com/dilnazua/AstroTravel/assets/50591474/1d411798-5589-433b-b80b-fd72ab26250c)
 
+Process of making: 1. Writing a program in Python that calculates planets’ orbit properties and divides it into sections depending on the orbital period (where a planet is located in its orbit on any day of its period) Kepler’s law was applied and orbit division was done by iteration. General Kepler’s law: E-e sin E = M | Where E - an eccentric anomaly, M - an average anomaly, e - eccentricity of an orbit | When Kepler’s equation is solved by iteration as the initial value of E0 M can be taken, subsequent calculations are done like this: Ek=M +e sinEk-1 E0=M
+E = M + e*(180/pi) * sin(M) * ( 1.0 + e * cos(M) ) | If e>0.05:
+E1 = E0 - ( E0 - e*(180/pi) * sin(E0) - M ) / ( 1 - e * cos(E0) )
+x=a(cosE-e) y=bsinE b=a√1-e^2 (a,b-major and minor axis of the ellipse)
+
+All the calculations above have been implemented in the Python code
+Input data: aphelion and perihelion of the orbit, eccentricity, and orbital period in Earth days.
+Output data: major and minor axis, list of coordinates corresponding to each of period days, and a supporting image.
+All the data then gets saved into an SQL Database to be accessed later.
+
+
 
 ![image](https://github.com/dilnazua/AstroTravel/assets/50591474/2003560e-b033-4798-b4d5-dd19432d44e7)
 
